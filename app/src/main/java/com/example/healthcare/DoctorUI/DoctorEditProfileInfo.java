@@ -69,7 +69,10 @@ public class DoctorEditProfileInfo extends AppCompatActivity {
         receivedCity = intent.getStringExtra("city");
         receivedCode = intent.getStringExtra("code");
         receivedImageUri = intent.getStringExtra("imageUri");
-        Uri uri = Uri.parse(receivedImageUri);
+        Uri uri = null;
+        if (receivedImageUri != null) {
+            uri = Uri.parse(receivedImageUri);
+        }
 
         fullName.setText(receivedFullName);
         speciality.setText(receivedSpeciality);

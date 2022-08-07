@@ -67,7 +67,10 @@ public class EditProfileActivity extends AppCompatActivity {
         receivedBirthDate = intent.getStringExtra("birthDate");
         receivedMaritalStatus = intent.getStringExtra("maritalStatus");
         receivedImageUri = intent.getStringExtra("imageUri");
-        Uri uri = Uri.parse(receivedImageUri);
+        if (receivedImageUri != null) {
+            Uri uri = Uri.parse(receivedImageUri);
+        }
+
 
         fullName.setText(receivedFullName);
         cin.setText(receivedCin);
@@ -75,7 +78,7 @@ public class EditProfileActivity extends AppCompatActivity {
         phoneNumber.setText(receivedPhoneNumber);
         birthDate.setText(receivedBirthDate);
         maritalStatus.setText(receivedMaritalStatus);
-        Picasso.get().load(uri).into(circleImageView);
+        Picasso.get().load(mImageUri).into(circleImageView);
 
         FrameLayout rootLayout = findViewById(R.id.root); //there you have to get the root layout of your second activity
         mRevealAnimation = new RevealAnimation(rootLayout, intent, this);
@@ -115,12 +118,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private void uploadImage() {
         StorageReference ref = mStorageReference.child(receivedEmail + "." + getExtension(mImageUri));
-        ref.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(EditProfileActivity.this, "Image uploaded successfully", Toast.LENGTH_SHORT).show();
-            }
-        });
+        ref.putFile(mImageUri).addOnSuccessListener(taskSnapshot -> Toast.makeText(EditProfileActivity.this, "Image uploaded successfully", Toast.LENGTH_SHORT).show());
 
 
     }
@@ -128,6 +126,7 @@ public class EditProfileActivity extends AppCompatActivity {
     public void update(View view) {
         database = FirebaseDatabase.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
+        assert user != null;
         final String userUid = user.getUid();
         DatabaseReference dbRef = database.getReference("Patients");
         String[] fn = fullName.getText().toString().split(" ");

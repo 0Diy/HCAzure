@@ -70,7 +70,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/ic_today"/>
+                    app:srcCompat="@drawable/ic_today"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:layout_width="74dp"
                     android:layout_height="74dp"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/ic_patient"/>
+                    app:srcCompat="@drawable/ic_patient"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/ic_search"/>
+                    app:srcCompat="@drawable/ic_search"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/ic_person_pin"/>
+                    app:srcCompat="@drawable/ic_person_pin"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/ic_exit_to_app"/>
+                    app:srcCompat="@drawable/ic_exit_to_app"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

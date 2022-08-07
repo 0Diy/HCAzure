@@ -1,3 +1,40 @@
 {
- "_comment": "CONNECT THE APPLICATION TO YOUR OWN FIREBASE !",
+  "project_info": {
+    "project_number": "870777369933",
+    "firebase_url": "https://healthcare-e635c-default-rtdb.firebaseio.com/",
+    "project_id": "healthcare-e635c",
+    "storage_bucket": "healthcare-e635c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870777369933:android:6fc341563f87c50d3a3304",
+        "android_client_info": {
+          "package_name": "com.example.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870777369933-g2ligmq7f7nkge2il08ds08qdof955lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMLg_dqNh1gNw4acQ_u923kZe1L_y35nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870777369933-g2ligmq7f7nkge2il08ds08qdof955lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
 }

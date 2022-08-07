@@ -64,7 +64,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center_horizontal"
             android:text="Details : "
-            android:textColor="#33aeb6"
+            android:textColor="#2175F3"
             android:textSize="16sp" />
 
         <LinearLayout

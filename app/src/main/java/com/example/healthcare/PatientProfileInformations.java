@@ -47,6 +47,7 @@ public class PatientProfileInformations extends AppCompatActivity {
         circleImageView = findViewById(R.id.profile_image);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+        assert user != null;
         uid = user.getUid();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Patients");

@@ -54,7 +54,7 @@ public class AddConsultationDialog extends AppCompatDialogFragment {
                     Toast.makeText(getActivity(), "A field is empty", Toast.LENGTH_SHORT).show();
                 } else {
                     Consultation consultation = new Consultation(doctorName, doctorEmail, patientEmail, disease.getText().toString(), date.getText().toString(),
-                            price.getText().toString()+" DH", prescription.getText().toString());
+                            price.getText().toString()+" MYR", prescription.getText().toString());
                     DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Consultations");
                     ref.push().setValue(consultation).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

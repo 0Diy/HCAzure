@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text="Aliluch Loutfi"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text="Dermathologue"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text="aliluch.loutfi@gmail.com"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:inputType="textEmailAddress"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -133,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0610108175"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:fontFamily="@font/montserrat"
                 android:inputType="phone"
                 android:textSize="16sp" />
@@ -160,7 +160,7 @@
                 android:fontFamily="@font/montserrat"
                 android:text="Avenue Mohamed Zraktouni"
                 android:inputType="date"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:textSize="16sp" />
         </LinearLayout>
         <LinearLayout
@@ -183,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
-                android:backgroundTint="#33AEB6"
+                android:backgroundTint="#2175F3"
                 android:text="Al Hoceima"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -194,7 +194,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:background="@drawable/outline_button"
             android:text="Save changes"
-            android:textColor="#33AEB6"
+            android:textColor="#2175F3"
             android:layout_marginBottom="20dp"
             android:textAllCaps="false"
             android:onClick="update"/>
